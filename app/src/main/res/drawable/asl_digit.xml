@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/one"
+        android:drawable="@drawable/ic_digit_one"
+        app:state_one="true" />
+
+    <item
+        android:id="@+id/two"
+        android:drawable="@drawable/ic_digit_two"
+        app:state_two="true" />
+
+    <item
+        android:id="@+id/three"
+        android:drawable="@drawable/ic_digit_three"
+        app:state_three="true" />
+
+    <item
+        android:id="@+id/four"
+        android:drawable="@drawable/ic_digit_four"
+        app:state_four="true" />
+
+    <item
+        android:id="@+id/five"
+        android:drawable="@drawable/ic_digit_five"
+        app:state_five="true" />
+
+    <item
+        android:id="@+id/six"
+        android:drawable="@drawable/ic_digit_six"
+        app:state_six="true" />
+
+    <item
+        android:id="@+id/seven"
+        android:drawable="@drawable/ic_digit_seven"
+        app:state_seven="true" />
+
+    <item
+        android:id="@+id/eight"
+        android:drawable="@drawable/ic_digit_eight"
+        app:state_eight="true" />
+
+    <item
+        android:id="@+id/nine"
+        android:drawable="@drawable/ic_digit_nine"
+        app:state_nine="true" />
+
+    <item
+        android:id="@+id/zero"
+        android:drawable="@drawable/ic_digit_zero" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_zero_to_digit_one"
+        android:fromId="@id/zero"
+        android:toId="@id/one" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_one_to_digit_two"
+        android:fromId="@id/one"
+        android:toId="@id/two" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_two_to_digit_three"
+        android:fromId="@id/two"
+        android:toId="@id/three" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_three_to_digit_four"
+        android:fromId="@id/three"
+        android:toId="@id/four" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_four_to_digit_five"
+        android:fromId="@id/four"
+        android:toId="@id/five" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_five_to_digit_six"
+        android:fromId="@id/five"
+        android:toId="@id/six" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_six_to_digit_seven"
+        android:fromId="@id/six"
+        android:toId="@id/seven" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_seven_to_digit_eight"
+        android:fromId="@id/seven"
+        android:toId="@id/eight" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_eight_to_digit_nine"
+        android:fromId="@id/eight"
+        android:toId="@id/nine" />
+
+    <transition
+        android:drawable="@drawable/avd_digit_nine_to_digit_zero"
+        android:fromId="@id/nine"
+        android:toId="@id/zero" />
+
+</animated-selector>

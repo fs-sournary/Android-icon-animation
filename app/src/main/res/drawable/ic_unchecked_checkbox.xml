@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:tint="?attr/colorControlNormal"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <group
+        android:name="group_icon_null"
+        android:scaleX="0.2"
+        android:scaleY="0.2"
+        android:translateX="24"
+        android:translateY="24">
+
+        <group
+            android:name="group_check"
+            android:scaleX="7.5"
+            android:scaleY="7.5">
+            <path
+                android:name="path_box_outer_merged"
+                android:fillAlpha="0"
+                android:fillColor="@android:color/white"
+                android:pathData="@string/unchecked_checkbox_box_outer_merged_path" />
+        </group>
+
+        <group
+            android:name="group_box_dilate"
+            android:scaleX="7.5"
+            android:scaleY="7.5">
+            <path
+                android:name="path_box_inner_merged"
+                android:fillColor="@android:color/white"
+                android:pathData="@string/unchecked_checkbox_box_inner_path" />
+        </group>
+
+    </group>
+
+</vector>

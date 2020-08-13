@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/ic_unchecked_checkbox">
+
+    <target android:name="group_icon_null">
+        <aapt:attr name="android:animation">
+            <set>
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="200"
+                        android:interpolator="@anim/interpolator_unchecked_to_checked_checkbox_1"
+                        android:propertyName="scaleX"
+                        android:valueFrom="0.2"
+                        android:valueTo="0.18" />
+
+                    <objectAnimator
+                        android:duration="300"
+                        android:interpolator="@anim/interpolator_unchecked_to_checked_checkbox_1"
+                        android:propertyName="scaleX"
+                        android:valueFrom="0.18"
+                        android:valueTo="0.2" />
+                </set>
+
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="200"
+                        android:interpolator="@anim/interpolator_unchecked_to_checked_checkbox_1"
+                        android:propertyName="scaleY"
+                        android:valueFrom="0.2"
+                        android:valueTo="0.18" />
+
+                    <objectAnimator
+                        android:duration="300"
+                        android:interpolator="@anim/interpolator_unchecked_to_checked_checkbox_1"
+                        android:propertyName="scaleY"
+                        android:valueFrom="0.18"
+                        android:valueTo="0.2" />
+                </set>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="path_box_outer_merged">
+        <aapt:attr name="android:animation">
+            <set>
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="200"
+                        android:interpolator="@android:interpolator/linear"
+                        android:propertyName="pathData"
+                        android:valueFrom="@string/unchecked_checkbox_box_outer_merged_path"
+                        android:valueTo="@string/unchecked_checkbox_box_outer_merged_path"
+                        android:valueType="pathType" />
+
+                    <objectAnimator
+                        android:duration="300"
+                        android:interpolator="@anim/interpolator_unchecked_to_checked_checkbox_1"
+                        android:propertyName="pathData"
+                        android:valueFrom="@string/unchecked_checkbox_box_outer_merged_path"
+                        android:valueTo="@string/checked_checkbox_check_path_merged_path"
+                        android:valueType="pathType" />
+                </set>
+
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="166"
+                        android:interpolator="@android:interpolator/linear"
+                        android:propertyName="fillAlpha"
+                        android:valueFrom="0"
+                        android:valueTo="0" />
+
+                    <objectAnimator
+                        android:duration="33"
+                        android:interpolator="@anim/interpolator_unchecked_to_checked_checkbox_1"
+                        android:propertyName="fillAlpha"
+                        android:valueFrom="0"
+                        android:valueTo="1" />
+                </set>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="path_box_inner_merged">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="166"
+                    android:interpolator="@anim/interpolator_unchecked_to_checked_checkbox_1"
+                    android:propertyName="pathData"
+                    android:valueFrom="@string/unchecked_checkbox_box_inner_path"
+                    android:valueTo="@string/checked_checkbox_box_inner_merged_path"
+                    android:valueType="pathType" />
+
+                <set android:ordering="sequentially">
+                    <objectAnimator
+                        android:duration="166"
+                        android:interpolator="@android:interpolator/linear"
+                        android:propertyName="fillAlpha"
+                        android:valueFrom="1"
+                        android:valueTo="1" />
+
+                    <objectAnimator
+                        android:duration="33"
+                        android:interpolator="@anim/interpolator_unchecked_to_checked_checkbox_0"
+                        android:propertyName="fillAlpha"
+                        android:valueFrom="1"
+                        android:valueTo="0" />
+                </set>
+            </set>
+        </aapt:attr>
+    </target>
+
+</animated-vector>

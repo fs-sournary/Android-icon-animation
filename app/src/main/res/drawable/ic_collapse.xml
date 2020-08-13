@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:tint="?attr/colorControlNormal"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <group
+        android:name="group_chevron"
+        android:translateX="12"
+        android:translateY="15">
+
+        <group
+            android:name="group_left"
+            android:rotation="135">
+            <group android:translateY="3">
+                <path
+                    android:fillColor="@android:color/white"
+                    android:pathData="@string/expand_collapse_path" />
+            </group>
+        </group>
+
+        <group
+            android:name="group_right"
+            android:rotation="45">
+            <group android:translateY="-3">
+                <path
+                    android:fillColor="@android:color/white"
+                    android:pathData="@string/expand_collapse_path" />
+            </group>
+        </group>
+
+    </group>
+
+</vector>

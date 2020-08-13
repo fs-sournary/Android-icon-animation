@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_alarm"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toTopOf="@id/img_timer"
+        app:layout_constraintEnd_toStartOf="@id/img_clock"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:srcCompat="@drawable/avd_alarm" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_clock"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_alarm"
+        app:layout_constraintTop_toTopOf="@id/img_alarm"
+        app:srcCompat="@drawable/avd_clock" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_timer"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/img_stop_watch"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_alarm"
+        app:srcCompat="@drawable/avd_timer" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img_stop_watch"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_timer"
+        app:layout_constraintTop_toTopOf="@id/img_timer"
+        app:srcCompat="@drawable/avd_stop_watch" />
+</androidx.constraintlayout.widget.ConstraintLayout>
